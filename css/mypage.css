@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bigbox {
+    width: 100%;
+    height: auto;
+}
+
+/* mypage */
+
+.mypage-parents {
+    width: 100%;
+    height: auto;
+}
+
+.mypage-parents .menuselect {
+    width: 200px;
+    height: 350px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.mypage {
+    margin: 0 auto;
+    width: 70%;
+    height: 90%;
+    margin-top: 60px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mypage > .box1 {
+    width: 650px;
+    height: 460px;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    
+}
+
+.mypage  .User-info{
+    background-color: white;
+    width: 650px;
+    height: 120px;
+    font-weight: bold;
+    display: flex;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+}
+/*  */
+.mypage  .User-info  .User-face {
+    width: 100px;
+    height: 100px;
+    background-color: #FFEDCB;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 55%;
+    background-image: url('../asset/UserFace.png');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.mypage  .User-info  .Username {
+    display: flex;
+    margin-left: 20px;
+    width: 350px;
+    color: #4F4537;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+.mypage  .User-info > .edit {
+    margin-top: 35px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: #1a73e8;
+    border: 1px solid rgb(211, 211, 211);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+/* 유저 상세정보 */
+.mypage  .User-info2 {
+    margin-top: 20px;
+    width: 650px;
+    height: 320px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.mypage  .User-info2 > h2 {
+    font-weight: 700;
+    margin: 15px 0px 0px 20px;
+    font-size: 22px;
+}
+
+.mypage  .User-info2 > hr {
+    margin: 5px 0px 0px 20px;
+    width: 80%;
+}
+
+.mypage  .User-info2 > .Detail {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: 15px 0px 0px 20px;
+}
+
+.mypage  .User-info2  .Detail-info {
+   margin-right: 50px;
+   width : 235px;
+   height: 60px;
+}
+
+.mypage  .User-info2  .Detail-info:first-child {
+    margin-left: 0px;
+}
+
+.mypage  .User-info2 .Detail-info > h4 {
+    color: #666;
+}
+
+.mypage .User-info2 .Detail-info > span {
+    display: block;
+    margin-top: 5px;
+}
+
+.mypage .box2 {
+    margin-left: 20px;
+    width: 560px;
+    height: 480px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+
+/* 유저 OTT 정보 */
+.mypage .User-OTT {
+    border-radius: 7%;
+    width: 250px;
+    height: 225px;
+    background-color: white;
+    display: block;
+    margin-right: 20px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    
+}
+
+
+.mypage .User-OTT > .top-menu {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+    display: flex;
+    flex-direction: column;
+}
+/* 선호OTT배경 */
+.mypage .User-OTT > .top-menu > .ottimg {
+    margin: auto;
+    width: 220px;
+    height: 130px;
+    background-image: url('../asset/Mypageimg/Millie.png');
+    background-size: cover;
+}
+
+/* 현재 파티 정보 */
+.mypage .User-OTT > .top-menu > .moneyicon {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin: auto;
+    background-image: url('../asset/icon/money.png');
+    background-size: cover;
+}
+
+
+/* 유저얼굴 */
+.mypage .User-OTT > .top-menu > .usericon {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin: auto;
+    background-image: url('../asset/Mypageimg/usersmile.png');
+    background-size: cover;
+}
+
+.mypage .User-OTT > .top-menu > h1 {
+  margin: auto;
+}
+
+/* 중앙메뉴 시작 */
+
+.mypage .User-OTT > .middle-menu {
+    width: 100%;
+    height: 75px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;  
+    text-align: left;
+    color: white;
+}
+/* 배경색 지정 */
+.mypage .User-OTT > .loveott {
+    background-color: #7b81be;
+}
+
+.mypage .User-OTT > .partyinfo {
+    background-color: #4169c1;
+}
+
+.mypage .User-OTT > .usermanner {
+    background-color: #027648;
+}
+
+.mypage .User-OTT > .usecount {
+    background-color: #f88a80;
+}
+
+/* a태그 */
+.mypage .User-OTT > .middle-menu > h4 {
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: 10px;
+    display: inline-block;
+    color: #F8F8FF;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.mypage .User-OTT > .middle-menu > h3 {  
+    margin-left: 10px;
+}
+
+/* box3시작 */
+.box3 {
+    width: 1190px;
+    margin-bottom: 30px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.box3 > .party-history {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    flex-direction: column; /* 방햑을 가로로*/
+    flex-wrap: wrap;
+}
+
+/* 박스3 "지난 파티 이력" 텍스트 css */
+.box3 > .party-history > h2:first-child {
+    margin: 15px 0px 0px 20px;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* 파티 이력 아래 선 css */
+.box3 > .party-history > hr {
+    margin: 0px 0px 0px 20px;
+    width: 300px;
+}
+
+.box3 > .party-contents {
+    width: 1180px;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-top: -15px;
+}
+
+.box3 > .party-contents > .contents {
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 270px;
+    height: auto;
+    background-color: #ecf0f3;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.box3 > .party-contents > .contents > .top-area {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box3 > .party-contents > .contents > .top-area > .icon-image {
+    width: 128px;
+    height: 128px;
+    margin-left: 80px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+}
+
+/* 아이콘 배경지정 */
+.point-icon {
+    background-image: url('../asset/Mypageimg/card.png');
+    transform: translateX(-7.5px);
+}
+
+.ott-icon {
+    background-image: url('../asset/Netflix.png');
+    background-size: 50%;
+    background-position-x: 25px;
+}
+
+.party-icon {
+    background-image: url('../asset/Mypageimg/group.png');
+    background-size: 120%;
+    background-position-x: -10px;
+    background-position-y: 30px;
+    transform: translateX(-5px);
+}
+
+.post-icon {
+    background-position-x: -2px;
+    background-image: url('../asset/icon/post.png');
+    background-size: 80%;
+    background-position-x: 5px;
+    background-position-y: 20px;
+}
+
+/* 아이콘 배경 지정 끝 */
+.box3 > .party-contents > .contents > .top-area > h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box3 > .party-contents > .contents > .top-area > .location-btn {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 35px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a73e8;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #333;
+    background-color: #1B1C1F;
+    color: white;
+}
+
+footer .inner {
+    padding: 40px 0 60px 0;
+}
+
+footer .menu {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+}
+
+footer .menu li {
+    position: relative;
+}
+
+footer .menu li::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #555;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    margin: auto;
+}
+
+footer .menu li:last-child::before {
+    display: none;
+}
+
+footer .menu li a {
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+}
+ 
+footer > .inner > .btn-group {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+footer > .inner > .btn-group > .btn {
+    display: block;
+    width: 95px;
+    height: 40px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+footer > .inner > .btn-group > a {
+    display: block;
+    line-height: 40px;
+}
+
+footer .info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer .info span {
+    margin-right: 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+footer .info span:last-child {
+    margin-right: 0;
+}
+
+footer > .inner > .logo {
+    text-align: center;
+    margin-top: 20px;
+    color: #616161;
+}

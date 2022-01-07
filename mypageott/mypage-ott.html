@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 수정</title>
+    <link rel="stylesheet" href="../css/mypage-sidebar.css">
+    <link rel="stylesheet" href="../css/mypage-ott.css">
+    <script src="../js/mypage-ott.js" defer></script>
+    <script src="../js/pagemove.js"></script>
+</head>
+<body>
+    
+    <div class="detail-parents">
+        
+        <!--목록을 나타내는 사이드바 div  -->
+       <div class="sidebar">
+           <!-- 유저 정보 -->
+           <div style="position: fixed;">
+               <div class="userinfo">
+                   <h3>???님 안녕하세요</h2> <!-- 유저 이름-->
+               </div>
+               <hr>
+           <!-- 메뉴목록 -->
+                <ul class="bigul">
+                    <li class="main-topic">회원 정보 관리</li>
+                        <ul class="small-topic">
+                            <li><a href="./mypageuser/userpassword-edit.html">-비밀번호 변경</a></li>
+                            <li><a href="./mypageuser/userprofile-edit.html">-닉네임 변경</a></li>
+                            <li><a href="./mypageuser/user-secession.html">-회원탈퇴</a></li>
+                        </ul>
+ 
+                    <li class="main-topic">
+                        <a href="./mypageott/mypage-ott.html">OTT 관리</a>
+                    </li>
+                     
+                    <li class="main-topic">
+                        <a href="./mypage-party.html">파티 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-현재 사용중인 파티</li>
+                            <li>-신청중인 파티</li>
+                            <li>-지난 파티</li>
+                        </ul>
+                    <li class="main-topic">
+                        <a href="./mypagewrite/mypage-write.html">글 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-게시물 보기</li>
+                            <li>-게시물 삭제</li>
+                        </ul>
+ 
+                    <li class="main-topic">결제 관리</li>
+                        <ul class="small-topic">
+                            <li>-카드변경</li>
+                            <li>-??변경</li>
+                        </ul>
+                </ul>
+               <hr>
+           </div>
+        </div>
+
+        <div class="userarea">
+
+               <h1>OTT 관리</h1>
+
+               <h4>OTT를 선택해주세요</h4>
+               
+               <div class="ottbox">
+                    <div class="ott netflix"><h3 class="ottname">넷플릭스</h3></div>
+                    <div class="ott"><h3 class="ottname">왓챠</h3></div>
+                    <div class="ott"><h3 class="ottname">디즈니플러스</h3></div>
+                    <div class="ott"><h3 class="ottname">티빙</h3></div>
+                    <div class="ott"><h3 class="ottname">밀리의서재</h3></div>
+                    <div class="ott"><h3 class="ottname">닌텐도</h3></div>
+                    <!-- 없다면 -->
+                    <div class="ott">
+                        <img src="../asset/icon/plus.png" alt="" width="30px" height="30px">
+                        <h3>추가</h3>
+                    </div>
+               </div>
+
+               <div class="ott-info">
+                    <div class="ott-infobox">
+                       
+                        <h3 class="change-ottname"></h3>
+                        
+                        <div class="textbox">
+                            <p id="ottid">아이디 : </p>
+                            <p id="ottpwd">비밀번호 : </p>
+                        </div>
+
+                        <div class="btn box">
+                            <input type="button" value="수정하기" name="editott">
+                            <input type="button" value="삭제하기" name="deleteott">
+                        </div>
+                        
+                    </div> 
+               </div>
+
+               <div class="ott-notinfo">
+                    <img src="../asset/icon/no-reject.png" alt="">
+                    <h3>OTT가 선택되지 않았습니다. 선택해주세요</h3>
+               </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

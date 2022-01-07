@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.detail-parents {
+  width: 100%;
+  height: auto;
+}
+
+.detail-parents > .sidebar {
+  width: 250px;
+  height: 100%;
+  background-color:  royalblue;
+  position: fixed;
+  z-index: 100;
+  color: white;
+}
+
+.detail-parents > .sidebar > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail-parents > .sidebar hr {
+  margin: auto;
+  width: 75%;
+}
+
+/* 유저에 대한 정보 */
+.userinfo {
+  width: 250px;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.bigul {
+  margin: 10px 0px 10px 0px;
+  text-align: left;
+  width: 150px;
+  list-style: none;
+}
+
+.bigul > li {
+  cursor: pointer;
+}
+
+ul > .main-topic {
+  font-weight: 600;
+  font-size: 20px;
+}
+ul > .small-topic {
+  width: 100%;
+  list-style: none;
+  margin-left: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* 사이드바 끝 */
+
+.detail-parents > .contents-box {
+  margin-left: 300px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 현재 사용중인 파티 영역 */
+.detail-parents > .contents-box > .now-party {
+  width: 100%;
+  height: auto;
+}
+/* now-party안에 contents박스 */
+.contents-area {
+  margin-left: 5%;
+  margin-top: 20px;
+  width: 85%;
+  height: auto;
+}
+/* hr선 */
+.contents-area > hr {
+  margin-top: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+/* 아래 파티영역 */
+.contents-area > .party-area {
+  width: 100%;
+  height: auto;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.contents-area > .party-area > .party {
+  width: 220px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* innerbox 호버시 나오는 영역 */
+.contents-area > .party-area > .party > .innerbox {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+  text-align: center;
+}
+
+.contents-area > .party-area > .party > .innerbox > h3 {
+  padding: 20px;
+}
+
+.contents-area > .party-area > .party > .innerbox > .user {
+  display: flex;
+  width: 180px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contents-area > .party-area > .party > .innerbox > .user > h5 {
+  margin-left: 20px;
+  font-size: 15px;
+  height: 20px;
+  padding-top: 15px;
+}
+.contents-area > .party-area > .party > .innerbox > input {
+  width: 50%;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contents-area > .party-area > .party > .innerbox:hover {
+  opacity: 0.85;
+}
+
+/* inner박스 끝 */
+
+/* 공통영역 */
+.contents-area > .party-area > .netflix {
+  background-image: url("../asset/Netflix.png");
+  background-color: black;
+}
+
+.contents-area > .party-area > .watcha {
+  background-image: url("../asset/Watcha.png");
+  background-color: lightpink;
+}
+
+.contents-area > .party-area > .wavve {
+  background-image: url("../asset/wavve.png");
+  background-color: skyblue;
+}
+
+.contents-area > .party-area > .millie {
+  background-image: url("../asset/Millie.png");
+  background-color: yellow;
+}
+
+.contents-area > .party-area > .nob {
+  -webkit-filter: grayscale(100%);
+  background-color: gray;
+  text-align: center;
+}
+
+/* 공통영역 끝 */
+
+/* 신청중인 파티 */
+.apply-party .contents-area > .party-area > .party > .innerbox > h3 {
+  padding: 30px;
+}
+.apply-party {
+  width: 100%;
+  height: auto;
+}
+
+.apply-party > .contents-area > .party-area > .party {
+  width: 220px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: 50%;
+  background-position: center;
+  -webkit-filter: grayscale(30%);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* 신청중인 파티 영역 끝  */
+
+.past-party {
+  width: 100%;
+  height: 800px;
+}
+
+.past-party > .contents-area > .party-area > .party {
+  width: 220px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: 50%;
+  background-position: center;
+  background-color: lightpink;
+  -webkit-filter: grayscale(100%);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* 내가 만드는 모덜창 */
+
+/* 모덜창 영역 */
+.mypage-party-wrap {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.mypage-party-modal {
+  width: 550px;
+  height: auto;
+  padding: 20px 60px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  margin: auto; 
+}
+
+.mypage-party-modal > .top-area {
+  width: 550px;
+  display: flex;
+  align-content: space-around;
+}
+
+.mypage-party-modal > .top-area > img {
+  width: 100px;
+  height: 40px;
+  margin-left: 170px;
+}
+
+.mypage-party-modal > .middle-area {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content:flex-start;
+}
+/* 파티정보 */
+.mypage-party-modal > .middle-area > .partyinfo {
+  width: 300px;
+  height: 340px;
+  margin-top: 10px;
+  background-color: rgba(240, 240, 240, 0.637);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle-area > .partyinfo > .party-code {
+  margin: 5px;
+  margin-top: 20px;
+  width: 270px;
+  height: 75px;
+  background-color: #00C1FF;
+  border-radius: 10px;
+  color: white;
+}
+
+.middle-area > .partyinfo > .party-ready {
+  margin: 5px;
+  width: 270px;
+  height: 75px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.middle-area > .partyinfo > .party-ready > .user-count {
+  width: 130px;
+  height: 75px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fec32b;
+  line-height: 35px;
+}
+
+
+
+.middle-area > .partyinfo > .party-ready > .ready {
+  margin-left: 10px;
+  width: 130px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: #f93d00
+}
+
+.middle-area > .partyinfo > .party-ready > .ready > h2 {
+ text-align: center;
+ padding-top: 20px;
+}
+
+.middle-area > .partyinfo > .count-date {
+  margin: 5px;
+  width: 270px;
+  height: 85px;
+  background-color: #DEF2FF;
+  border-radius: 10px;
+}
+
+.middle-area > .partyinfo > .count-date > h2 {
+  text-align: center;
+ padding-top: 25px;
+}
+
+.middle-area > .partyinfo > .money { 
+  margin: 5px;
+  width: 270px;
+  height: 40px;
+  background-color: #03cc97;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* 유저정보 */
+.mypage-party-modal > .middle-area > .userinfo {
+  width: 250px;
+  height: 340px;
+  border-radius: 5%;
+  background-color: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  vertical-align: middle;
+  margin-left: 10px;
+  background-color: rgba(248, 248, 248, 0.9);
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .toptext {
+  width: 90%;
+  margin: 5px;
+  text-align: left;
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .user {
+  width: auto;
+  height: 65px;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  color: black;
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .leader {
+  margin-top: 25px;
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .user > .userimage {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-left: 5px;
+  background-color: #5ab5d7;
+  color: white;
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .user > .username {
+  width: auto;
+  text-align: left;
+  margin-left: 5px;
+  padding: 5px;
+  margin-right: 20px;
+}
+/* 유저 날짜 */
+.mypage-party-modal > .middle-area > .userinfo > .user > .username > .userdate {
+  font-size: 12px;
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .user > .userrank {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 5px;
+  background-color: #5255db;
+  color: white;
+  margin-right: 10px;
+}
+
+.mypage-party-modal > .middle-area > .userinfo > .user > .userrank > h2 {
+  font-size: 20px;
+}
+
+
+.mypage-party-modal > .bottom-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mypage-party-modal > .bottom-area > input {
+  background-color: #888;
+  color: white;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.mypage-party-modal > .bottom-area > input:nth-child(1) {
+  background-color: royalblue ;
+}
+
+
+.innertext {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 더보기 */
+.innertext > .more {
+  width: 120px;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

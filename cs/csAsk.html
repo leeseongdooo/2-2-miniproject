@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1문의하기</title>
+    <link rel="stylesheet" href="../css/csAsk.css">
+</head>
+<body>
+    <div class="firstdiv">
+        <div class="sidebar">
+            <!-- 유저 정보 -->
+            <div>
+                <div class="userinfo">
+                    <h3>???님 안녕하세요</h2> <!-- 유저 이름-->
+                </div>
+                <hr>
+            <!-- 메뉴목록 -->
+                <ul class="bigul">
+        
+                    <li class="main-topic">
+                        <a href="./noticepage.html">공지사항</a>
+                    </li>
+                    
+                    <li class="main-topic">
+                        <a href="./manyQA.html">자주묻는질문</a>
+                    </li>
+                        
+                    <li class="main-topic">
+                        <a href="./csAsk.html">1:1문의</a>
+                    </li>
+                    
+                    <li class="main-topic">
+                        <a href="./csAsk-list.html">1:1문의 내역</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+  
+     <!-- BigBox를 감싸주는 div -->
+    <form action="" class="real-big">
+        <div class="bigbox">
+            
+            <div class="textbox">
+                <h2>1:1문의하기</h2>
+                <hr>
+            </div>
+
+            <div class="middlebox">
+                
+                <ul class="userarea">
+                    <li>
+                        <span>사용자</span>
+                        <input type="text" class="username" name="username" value="???" readonly>
+                    </li>
+
+                    <li>
+                        <span>제목</span>
+                        <input type="text" class="titlename" name="username" placeholder="제목을 입력해주세요">
+                    </li>
+
+                    <li>
+                        <span>내용</span>
+                        <textarea id="contents"></textarea>
+                    </li>
+                </ul>
+
+                <div class="notice">
+                    <ul>
+                        <li>성격에 맞지 않는 문의는 사전 통보 없이 삭제 되는점을 양해 부탁드립니다</li>
+                        <li>성격에 맞지 않는 문의는 사전 통보 없이 삭제 되는점을 양해 부탁드립니다</li>
+                        <li>성격에 맞지 않는 문의는 사전 통보 없이 삭제 되는점을 양해 부탁드립니다</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottombox">
+                <input type="button" value="취소">
+                <input type="button" value="문의">
+            </div>
+
+        </div>
+    </form>
+    </div>
+</body>
+</html>

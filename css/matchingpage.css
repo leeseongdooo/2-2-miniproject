@@ -1,0 +1,404 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 1300px;
+    height: 950px;
+    display: flex;
+    border: 1px solid black;
+}
+/* 사이드바 영역 시작 */
+.sidebar {
+    width: 400px;
+    background-color: black;
+    color: white;
+}
+
+.sidebar > h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 250px;
+}
+
+.sidebar > img {
+   width: 230px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 80px;
+}
+
+.sidebar > input {
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    display: block;
+    cursor: pointer;
+    margin-left: 115px;
+}
+
+/* 사이드바 영역 끝 */
+
+/* 파티 영역 시작 */
+.party-area {
+  margin-left: 20px;
+    padding-top: 80px;
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+/* 상단 "파티 찾기" 영역 */
+.party-area > .top-text {
+    margin: 40px 0px 10px 0px;
+    width: 200px;
+}
+
+.party-area > .top-text > p {
+    font-size: 15px;
+}
+
+/* 파티 선택하기 영역 */
+.middle-area {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middle-area > .party-info {
+    width: 380px;
+    height: 150px;
+    border-radius: 15px;
+    margin-right: 10px;
+    color: black;
+    background-color: #f5f5f7;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+
+/* div 안쪽 */
+.middle-area > .party-info > div {
+    margin: 5px 0px 0px 10px;
+}
+/* 위에 탑 택스트 */
+.middle-area > .party-info > .top-text {
+    width: 360px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 파티생성날짜 */
+.middle-area > .party-info > .date {
+    display: inline-block;
+    margin-left: 12px;
+}
+/* 요금 */
+.middle-area > .party-info > .fee {
+  font-size: 30px;
+  margin-left: 12px;
+}
+
+.middle-area > .party-info > .party-btnbox > .user-countbox {
+    width: 330px;
+    height: 40px;
+    display: flex;
+}
+
+.middle-area > .party-info >  .party-btnbox > .user-countbox > img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-top: auto;
+    background-color: lightgray;
+    margin-right: 5px;
+}
+
+/* 유저가 들어왔을때 */
+.middle-area > .party-info >  .party-btnbox > .user-countbox > .onuser {
+  background-color: beige;
+}
+
+.middle-area > .party-info > .party-btnbox {
+    width: 360px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.middle-area > .party-info > .party-btnbox > input {
+    width: 90px;
+    height: 30px;
+    border: none;
+    margin-top: 10px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.middle-area > .party-info  > .party-btnbox > input:hover {
+    background-color: orange;
+}
+
+.circle {
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 50px 0px 0px 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.no-party {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* 하단 버튼 div */
+.btn-box {
+    width: 800px;
+   
+}
+
+.btn-box > input {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: royalblue;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-box > input:first-child {
+  margin-left: 40px;
+}
+.btn-box > .pagenumber {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* 모덜창 영역 */
+.mypage-party-wrap {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .mypage-party-modal {
+    width: 600px;
+    height: auto;
+    padding: 20px 60px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    margin: auto; 
+  }
+  
+  .mypage-party-modal > .top-area {
+    width: 550px;
+    display: flex;
+    align-content: space-around;
+  }
+  
+  .mypage-party-modal > .top-area > img {
+    width: 100px;
+    height: 40px;
+    margin-left: 170px;
+  }
+  
+  .mypage-party-modal > .middle-area {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content:flex-start;
+  }
+  /* 파티정보 */
+  .mypage-party-modal > .middle-area > .partyinfo {
+    width: 300px;
+    height: 340px;
+    margin-top: 10px;
+    background-color: rgba(240, 240, 240, 0.637);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .party-code {
+    margin: 5px;
+    margin-top: 20px;
+    width: 270px;
+    height: 75px;
+    background-color: #00C1FF;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .party-ready {
+    margin: 5px;
+    width: 270px;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .party-ready > .user-count {
+    width: 130px;
+    height: 75px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fec32b;
+    line-height: 35px;
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .party-ready > .ready {
+    margin-left: 10px;
+    width: 130px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #f93d00
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .party-ready > .ready > h2 {
+   text-align: center;
+   padding-top: 20px;
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .count-date {
+    margin: 5px;
+    width: 270px;
+    height: 85px;
+    background-color: #DEF2FF;
+    border-radius: 10px;
+  }
+  
+  .mypage-party-modal > .middle-area > .partyinfo > .count-date > h2 {
+    text-align: center;
+   padding-top: 25px;
+  }
+  
+  .mypage-party-modal >  .middle-area > .partyinfo > .money { 
+    margin: 5px;
+    width: 270px;
+    height: 40px;
+    background-color: #03cc97;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* 유저정보 */
+ .mypage-party-modal > .middle-area > .userinfo {
+    width: 250px;
+    height: 340px;
+    border-radius: 5%;
+    background-color: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgba(248, 248, 248, 0.9);
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .toptext {
+    width: 90%;
+    margin: 5px;
+    text-align: left;
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .user {
+    width: auto;
+    height: 65px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    color: black;
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .leader {
+    margin-top: 25px;
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .user > .userimage {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 5px;
+    background-color: #5ab5d7;
+    color: white;
+    text-align: center;
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .user > .username {
+    width: auto;
+    text-align: left;
+    margin-left: 5px;
+    padding: 5px;
+    margin-right: 20px;
+  }
+  /* 유저 날짜 */
+  .mypage-party-modal > .middle-area > .userinfo > .user > .username > .userdate {
+    font-size: 12px;
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .user > .userrank {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 5px;
+    background-color: #5255db;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .mypage-party-modal > .middle-area > .userinfo > .user > .userrank > h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  .mypage-party-modal > .bottom-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .mypage-party-modal > .bottom-area > input {
+    background-color: #888;
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mypage-party-modal > .bottom-area > input:nth-child(1) {
+    background-color: royalblue ;
+  }

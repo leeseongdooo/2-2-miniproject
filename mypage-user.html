@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보</title>
+    <link rel="stylesheet" href="./css/mypage-sidebar.css">
+    <link rel="stylesheet" href="./css/mypage-useredit.css">
+    <script src="./js/pagemove.js" defer></script>
+</head>
+<body>
+    
+    <div class="detail-parents">
+        
+        <!--목록을 나타내는 사이드바 div  -->
+        <div class="sidebar">
+            <!-- 유저 정보 -->
+            <div style="position: fixed;">
+                <div class="userinfo">
+                    <h3>???님 안녕하세요</h2> <!-- 유저 이름-->
+                </div>
+                <hr>
+            <!-- 메뉴목록 -->
+                <ul class="bigul">
+                    <li class="main-topic">회원 정보 관리</li>
+                        <ul class="small-topic">
+                            <li><a href="./mypageuser/userpassword-edit.html">-비밀번호 변경</a></li>
+                            <li><a href="./mypageuser/userprofile-edit.html">-닉네임 변경</a></li>
+                            <li><a href="./mypageuser/user-secession.html">-회원탈퇴</a></li>
+                        </ul>
+ 
+                    <li class="main-topic">
+                        <a href="./mypageott/mypage-ott.html">OTT 관리</a>
+                    </li>
+                     
+                    <li class="main-topic">
+                        <a href="./mypage-party.html">파티 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-현재 사용중인 파티</li>
+                            <li>-신청중인 파티</li>
+                            <li>-지난 파티</li>
+                        </ul>
+                    <li class="main-topic">
+                        <a href="./mypagewrite/mypage-write.html">글 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-게시물 보기</li>
+                            <li>-게시물 삭제</li>
+                        </ul>
+ 
+                    <li class="main-topic">결제 관리</li>
+                        <ul class="small-topic">
+                            <li>-카드변경</li>
+                            <li>-??변경</li>
+                        </ul>
+                </ul>
+                <hr>
+            </div>
+         </div>
+        <!-- 사이드바 영역 끝 -->
+        <!-- 회원정보 시작 -->
+        <div class="userarea">
+         
+            <h1 class="title-text">회원 정보</h1>
+            <hr>
+            <br>
+            <div class="now-info">
+                 
+                <div class="profile">
+                    <div class="userimage"></div>
+                    <h3>이성훈님</h3>
+                </div>
+
+                <div class="Detail"> 
+                    <div class="Detail-info">
+                        <div class="first-icon">N</div>
+                            <div class="info-box">
+                                <h4>닉네임</h4>
+                                <span>어드민FI</span>
+                            </div>
+                    </div> 
+                    
+                    <div class="Detail-info">
+                        <div class="first-icon">E</div>
+                            <div class="info-box">
+                                <h4>이메일</h4>
+                                <span>dltjdgns3z@naver.com</span>
+                            </div>
+                    </div>
+                    
+                    <div class="Detail-info">
+                        <div class="first-icon">P</div>
+                        
+                        <div class="info-box">
+                            <h4>휴대전화</h4>
+                            <span>010-6436-4239</span>
+                        </div>
+                    </div>
+
+                    <div class="Detail-info">
+                        <div class="first-icon">B</div>
+                        <div class="info-box">
+                            <h4>생일</h4>
+                            <span>1999-08-19</span>
+                        </div>
+                    </div>
+                    
+                    <div class="Detail-info">
+                        <div class="first-icon">G</div>
+                        <div class="info-box">
+                            <h4>성별</h4>
+                            <span>남자</span>
+                        </div>
+                    </div>
+
+                    <div class="Detail-info">
+                        <div class="first-icon">D</div>
+                        <div class="info-box">
+                            <h4>가입일</h4>
+                            <span>2021-10-01</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 카테고리를 보여주는 부모 div -->
+            <div class="flex-parent">
+                <!-- 회원 이미지 -->
+                <div class="userimage-edit">
+                    <h3>프로필 수정</h1>
+                     <!-- 프로필 div -->
+                    <span>회원 프로필를 수정하시려면 <br> 아래 버튼을 눌러주세요</span>
+                    <input type="button" value="변경" class="edit-btn" onclick="profile()">
+                </div>
+
+              
+                <!-- 유저 패스워드 변경 -->
+                <div class="userpwd-info">
+                    <h3>비밀번호 수정</h3>
+                    <span>회원 비밀번호를 수정하시려면 <br>  아래 버튼을 눌러주세요</span>
+                    <input type="button" value="변경" class="edit-btn" onclick="password()">
+                </div>
+                <!-- 회원탈퇴 -->
+                <div class="user-secession">
+                    <h3>회원탈퇴</h3>
+                    <!-- 아래영역 텍스트 -->
+                    <span>회원탈퇴를 원하시면 <br> 아래 버튼을 눌러주세요</span>
+
+                    <input type="button" value="탈퇴" class="edit-btn secession" onclick="secession2()">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

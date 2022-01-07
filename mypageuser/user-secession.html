@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 수정</title>
+    <link rel="stylesheet" href="../css/mypage-sidebar.css">
+    <link rel="stylesheet" href="../css/useredit/mypage-secession.css">
+    <script src="../js/user-secession.js" defer></script>
+    <script src="../js/pagemove.js"></script>
+</head>
+<body>
+    
+    <div class="detail-parents">
+        
+        <!--목록을 나타내는 사이드바 div  -->
+       <div class="sidebar">
+           <!-- 유저 정보 -->
+           <div style="position: fixed;">
+               <div class="userinfo">
+                   <h3>???님 안녕하세요</h2> <!-- 유저 이름-->
+               </div>
+               <hr>
+           <!-- 메뉴목록 -->
+                <ul class="bigul">
+                    <li class="main-topic">회원 정보 관리</li>
+                        <ul class="small-topic">
+                            <li><a href="./mypageuser/userpassword-edit.html">-비밀번호 변경</a></li>
+                            <li><a href="./mypageuser/userprofile-edit.html">-닉네임 변경</a></li>
+                            <li><a href="./mypageuser/user-secession.html">-회원탈퇴</a></li>
+                        </ul>
+ 
+                    <li class="main-topic">
+                        <a href="./mypageott/mypage-ott.html">OTT 관리</a>
+                    </li>
+                     
+                    <li class="main-topic">
+                        <a href="./mypage-party.html">파티 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-현재 사용중인 파티</li>
+                            <li>-신청중인 파티</li>
+                            <li>-지난 파티</li>
+                        </ul>
+                    <li class="main-topic">
+                        <a href="./mypagewrite/mypage-write.html">글 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-게시물 보기</li>
+                            <li>-게시물 삭제</li>
+                        </ul>
+ 
+                    <li class="main-topic">결제 관리</li>
+                        <ul class="small-topic">
+                            <li>-카드변경</li>
+                            <li>-??변경</li>
+                        </ul>
+                </ul>
+               <hr>
+           </div>
+        </div>
+
+        <div class="userarea">
+                <h1 class="title-text">회원탈퇴</h1>
+                <span>회원탈퇴를 원하시면 "탈퇴하기"라고 적어주세요</span>
+                <hr>
+                <!-- 프로필 이미지 -->
+    
+                <div class="nickname edit">
+                    <input type="text" class="getout" onkeyup="printName()">
+                </div>
+               <!-- 알림 -->
+                <div class="notice">
+                  <h3>※주의사항※</h3>
+
+                  <ul>
+                      <li>탈퇴시 가입된 파티는 탈퇴처리됩니다.</li>
+                      <li>재가입은 ???후에 가능합니다.</li>
+                      <li>아쌀라말라이꿍"</li>
+                  </ul>
+                </div>
+    
+                <!-- 변경 / 돌아가기 버튼박스 -->
+                <div class="btn-box">
+                    <input type="button" value="탈퇴하기" class="firstbtn" disabled='disabled'>
+                    <input type="button" value="돌아가기" onclick="history.go(-1)"> 
+                </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

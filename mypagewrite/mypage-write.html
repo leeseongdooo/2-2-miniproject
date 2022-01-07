@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작성글 관리</title>
+    <link rel="stylesheet" href="../css/mypage-write.css">
+    <link rel="stylesheet" href="../css/mypage-sidebar.css">
+    <script src="../js/mypage-write.js" defer></script>
+</head>
+<body>
+    <div class="detail-parents">  
+         <!--목록을 나타내는 사이드바 div  -->
+         <div class="sidebar">
+            <!-- 유저 정보 -->
+            <div style="position: fixed;">
+                <div class="userinfo">
+                    <h3>???님 안녕하세요</h2> <!-- 유저 이름-->
+                </div>
+                <hr>
+            <!-- 메뉴목록 -->
+                <ul class="bigul">
+                    <li class="main-topic">회원 정보 관리</li>
+                        <ul class="small-topic">
+                            <li><a href="../mypageuser/userpassword-edit.html">-비밀번호 변경</a></li>
+                            <li><a href="../mypageuser/userprofile-edit.html">-닉네임 변경</a></li>
+                            <li><a href="../mypageuser/user-secession.html">-회원탈퇴</a></li>
+                        </ul>
+ 
+                    <li class="main-topic">
+                        <a href="../mypageott/mypage-ott.html">OTT 관리</a>
+                    </li>
+                     
+                    <li class="main-topic">
+                        <a href="../mypage-party.html">파티 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-현재 사용중인 파티</li>
+                            <li>-신청중인 파티</li>
+                            <li>-지난 파티</li>
+                        </ul>
+                    <li class="main-topic">
+                        <a href="../mypagewrite/mypage-write.html">글 관리</a>
+                    </li>
+                        <ul class="small-topic">
+                            <li>-게시물 보기</li>
+                            <li>-게시물 삭제</li>
+                        </ul>
+ 
+                    <li class="main-topic">결제 관리</li>
+                        <ul class="small-topic">
+                            <li>-카드변경</li>
+                            <li>-??변경</li>
+                        </ul>
+                </ul>
+                <hr>
+            </div>
+         </div>
+
+         <!-- 선택된 목록에 대한 컨텐츠를 나타내는 컨텐츠 박스 -->
+         <div class="contents-box">
+            <!-- 현재 파티에 대한 div -->
+            <div class="now-party">
+                <div class="contents-area">
+                    <h1 style="margin-bottom: 10px">작성글 관리</h1>
+                    <div class="dd">
+                        
+                        <div class="border-area">
+                            <!-- 파티1 -->
+                            <!-- 넷플 -->
+                            <div class="write one">
+                                <h3>작성 게시물</h3>
+                                <h4>24개</h4>
+                            </div>
+    
+                            <!-- 왓챠 -->
+                            <div class="write two">
+                                <h3>좋아요 누른 게시물</h3>
+                                <h4>24개</h4>
+                            </div>
+    
+                            <!-- 웨이브 -->
+                            <div class="write three">
+                                <h3>싫어요 누른 게시물</h3>
+                                <h4>24개</h4>
+                            </div>
+    
+                            
+                            <!-- 밀리의서재 -->
+                            <div class="write four">
+                                <h3>내 글 조회수</h3>
+                                <h4>24회</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- 게시글 콘텐츠박스 -->
+            <div class="write-contents">
+               
+                <div class="small-title">
+                    
+                    <h3>유저님의 게시물</h3>
+                    <div class="list">
+                        <input type="checkbox" class="check firstcheck" name="check">           
+                            <div class="title">제목</div>
+                            <div class="date">날짜</div>
+                            <p class="count-write"></p>
+                    </div>
+
+                    <hr>
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title"> 안녕하세요 가입인사드립니다.</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기" class="look-border">
+                            <input type="button" value="게시물 수정" class="edit-border">
+                            <input type="button" value="삭제하기" class="delete-border">
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title">디즈니플러스가 나왔네요</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기">
+                            <input type="button" value="게시물 수정">
+                            <input type="button" value="삭제하기">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title">디즈니플러스가 나왔네요</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기">
+                            <input type="button" value="게시물 수정">
+                            <input type="button" value="삭제하기">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title">디즈니플러스가 나왔네요</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기">
+                            <input type="button" value="게시물 수정">
+                            <input type="button" value="삭제하기">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title">디즈니플러스가 나왔네요</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기">
+                            <input type="button" value="게시물 수정">
+                            <input type="button" value="삭제하기">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title">디즈니플러스가 나왔네요</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기">
+                            <input type="button" value="게시물 수정">
+                            <input type="button" value="삭제하기">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="list">
+                        <input type="checkbox" class="check" name="check">
+                        
+                        <div class="writeinfo">
+                            <div class="write-title">디즈니플러스가 나왔네요</div>
+                            <div class="write-date">2021-05-05</div>
+                        </div>
+
+                        <div class="edit-btn">
+                            <input type="button" value="게시물 보기">
+                            <input type="button" value="게시물 수정">
+                            <input type="button" value="삭제하기">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="bottom-box">
+                        
+                        <div class="btn-box">
+                            <input type="button" value="선택 삭제">
+                        </div>
+
+                        <div class="pagenumber">
+                            <a href="" class="pagemove">1</a>
+                            <a href="" class="pagemove">2</a>
+                            <a href="" class="pagemove">3</a>
+                            <a href="" class="pagemove">4</a>
+                            <a href="" class="pagemove">5</a>
+                            <a href="" class="pagemove">6</a>
+                            <a href="" class="pagemove">7</a>
+                            <a href="" class="pagemove">8</a>
+                            <a href="" class="pagemove">9</a>
+                            <a href="" class="pagemove">10</a>                    
+                        </div>
+
+                        <div class="prev-next-btnbox">
+                            <input type="button" value="이전">
+                            <input type="button" value="다음">
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+         </div>
+    </div>
+</body>
+</html>
